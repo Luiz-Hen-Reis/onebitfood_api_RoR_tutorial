@@ -2,33 +2,32 @@ Product.destroy_all
 ProductCategory.destroy_all
 Restaurant.destroy_all
 Category.destroy_all
-​
+
 puts 'Criando Categorias'
-​
+
 path_image = 'public/images/categories/mexican.jpg'
 c = Category.create(id: 1, title: 'mexicana')
 c.image.attach(io: File.open(path_image), filename: 'mexican.jpg')
-​
+
 path_image = 'public/images/categories/italian.jpeg'
 c = Category.create(id: 2, title: 'italiana')
 c.image.attach(io: File.open(path_image), filename: 'italian.jpeg')
-​
+
 path_image = 'public/images/categories/japonese.jpeg'
 c = Category.create(id: 3, title: 'japonesa')
 c.image.attach(io: File.open(path_image), filename: 'japonese.jpeg')
-​
+
 path_image = 'public/images/categories/vegan.jpeg'
 c = Category.create(id: 4, title: 'vegana')
 c.image.attach(io: File.open(path_image), filename: 'vegan.jpeg')
-​
+
 path_image = 'public/images/categories/peruvian.jpg'
 c = Category.create(id: 5, title: 'peruana')
 c.image.attach(io: File.open(path_image), filename: 'peruana.jpg')
-​
-​
+
+
 puts 'Cadastrando Restaurantes'
-​
-# Mexican Restaurants
+
 path_image = 'public/images/restaurants/1.jpeg'
 r = Restaurant.create!(
  name: 'Los Sombreros',
@@ -43,7 +42,7 @@ prod = Product.create!(name: 'Nacho Guacamole', price: 19, description: 'Tortilh
 prod.image.attach(io: File.open('public/images/products/nachosg.jpg'), filename: 'nachosg.jpg')
 prod = Product.create!(name: 'Nacho', price: 19, description: 'Tortilhas com milho', product_category: pc)
 prod.image.attach(io: File.open('public/images/products/nachosg2.jpeg'), filename: 'nachosg2.jpeg')
-​
+
 # Curitiba
 path_image = 'public/images/restaurants/1.jpeg'
 r = Restaurant.create!(
@@ -59,7 +58,7 @@ prod = Product.create!(name: 'Nacho Guacamole', price: 19, description: 'Tortilh
 prod.image.attach(io: File.open('public/images/products/nachosg.jpg'), filename: 'nachosg.jpg')
 prod = Product.create!(name: 'Nacho', price: 19, description: 'Tortilhas com milho', product_category: pc)
 prod.image.attach(io: File.open('public/images/products/nachosg2.jpeg'), filename: 'nachosg2.jpeg')
-​
+
 path_image = 'public/images/restaurants/2.jpeg'
 r = Restaurant.create!(
  name: 'Ola Que Tal',
@@ -74,7 +73,7 @@ prod = Product.create!(name: 'Burrito', price: 19, description: 'Tortilhas com G
 prod.image.attach(io: File.open('public/images/products/bt.jpg'), filename: 'bt.jpg')
 prod = Product.create!(name: 'Quesadilha', price: 25, description: 'Tortilhas de queijo',  product_category: pc)
 prod.image.attach(io: File.open('public/images/products/quesa.jpeg'), filename: 'quesa.jpeg')
-​
+
 #Curitiba
 path_image = 'public/images/restaurants/2.jpeg'
 r = Restaurant.create!(
@@ -90,7 +89,7 @@ prod = Product.create!(name: 'Burrito', price: 19, description: 'Tortilhas com G
 prod.image.attach(io: File.open('public/images/products/bt.jpg'), filename: 'bt.jpg')
 prod = Product.create!(name: 'Quesadilha', price: 25, description: 'Tortilhas de queijo',  product_category: pc)
 prod.image.attach(io: File.open('public/images/products/quesa.jpeg'), filename: 'quesa.jpeg')
-​
+
 # Italian Restaurants
 path_image = 'public/images/restaurants/3.jpeg'
 r = Restaurant.create!(
@@ -106,7 +105,7 @@ prod = Product.create!(name: 'Berinjela à parmegiana', price: 78, description: 
 prod.image.attach(io: File.open('public/images/products/berinjela.jpg'), filename: 'berinjela.jpg')
 prod = Product.create!(name: 'Fritas', price: 35, description: 'Bata frita com bacon',  product_category: pc)
 prod.image.attach(io: File.open('public/images/products/fritas.jpg'), filename: 'fritas.jpg')
-​
+
 #Maceio
 path_image = 'public/images/restaurants/3.jpeg'
 r = Restaurant.create!(
@@ -122,7 +121,7 @@ prod = Product.create!(name: 'Berinjela à parmegiana', price: 78, description: 
 prod.image.attach(io: File.open('public/images/products/berinjela.jpg'), filename: 'berinjela.jpg')
 prod = Product.create!(name: 'Fritas', price: 35, description: 'Bata frita com bacon',  product_category: pc)
 prod.image.attach(io: File.open('public/images/products/fritas.jpg'), filename: 'fritas.jpg')
-​
+
 path_image = 'public/images/restaurants/4.jpeg'
 r = Restaurant.create!(
  name: 'La Pergoletti',
@@ -137,7 +136,7 @@ prod = Product.create!(name: 'Fogazza Bacon', price: 12, description: 'Bacon, pa
 prod.image.attach(io: File.open('public/images/products/fogazza.jpg'), filename: 'fogazza.jpg')
 prod = Product.create!(name: 'Fogazza A moda da Casa', price: 12, description: 'Calabresa, bacon, palmito e mussarela.',  product_category: pc)
 prod.image.attach(io: File.open('public/images/products/fogazza.jpg'), filename: 'fogazza.jpg')
-​
+
 # Japonese Restaurants
 path_image = 'public/images/restaurants/5.jpeg'
 r = Restaurant.create!(
@@ -153,7 +152,7 @@ prod = Product.create!(name: 'Temaki', price: 19.99, description: 'Enrolado de a
 prod.image.attach(io: File.open('public/images/products/temaki.jpeg'), filename: 'temaki.jpeg')
 prod = Product.create!(name: 'Sashimi', price: 30.90, description: 'Peixe cru fatiado, salmao, atum e peixe prego',  product_category: pc)
 prod.image.attach(io: File.open('public/images/products/sashimi.jpg'), filename: 'sashimi.jpg')
-​
+
 #Maceio
 path_image = 'public/images/restaurants/5.jpeg'
 r = Restaurant.create!(
@@ -169,7 +168,7 @@ prod = Product.create!(name: 'Temaki', price: 19.99, description: 'Enrolado de a
 prod.image.attach(io: File.open('public/images/products/temaki.jpeg'), filename: 'temaki.jpeg')
 prod = Product.create!(name: 'Sashimi', price: 30.90, description: 'Peixe cru fatiado, salmao, atum e peixe prego',  product_category: pc)
 prod.image.attach(io: File.open('public/images/products/sashimi.jpg'), filename: 'sashimi.jpg')
-​
+
 path_image = 'public/images/restaurants/6.jpeg'
 r = Restaurant.create!(
  name: 'Okuyamah',
@@ -184,7 +183,7 @@ prod = Product.create!(name: 'Hossomaki 16 unidades', price: 20.90, description:
 prod.image.attach(io: File.open('public/images/products/hosomaki.jpg'), filename: 'hosomaki.jpg')
 prod = Product.create!(name: 'Hot roll - 10 unidades', price: 12, description: '10 unidades.',  product_category: pc)
 prod.image.attach(io: File.open('public/images/products/hot-holl.jpg'), filename: 'hot-holl.jpg')
-​
+
 #Maceio
 path_image = 'public/images/restaurants/6.jpeg'
 r = Restaurant.create!(
@@ -200,7 +199,7 @@ prod = Product.create!(name: 'Hossomaki 16 unidades', price: 20.90, description:
 prod.image.attach(io: File.open('public/images/products/hosomaki.jpg'), filename: 'hosomaki.jpg')
 prod = Product.create!(name: 'Hot roll - 10 unidades', price: 12, description: '10 unidades.',  product_category: pc)
 prod.image.attach(io: File.open('public/images/products/hot-holl.jpg'), filename: 'hot-holl.jpg')
-​
+
 # Vegan Restaurants
 path_image = 'public/images/restaurants/7.jpeg'
 r = Restaurant.create!(
@@ -216,7 +215,7 @@ prod = Product.create!(name: 'Coleslaw', price: 8.99, description: 'Repolho roxo
 prod.image.attach(io: File.open('public/images/products/coleslaw.jpg'), filename: 'coleslaw.jpg')
 prod = Product.create!(name: 'Side salad', price: 9.90, description: 'Mix de folhas com cenoura ralada, tomatinho sweet e semente de girassol.',  product_category: pc)
 prod.image.attach(io: File.open('public/images/products/side-salad.jpeg'), filename: 'side-salad.jpeg')
-​
+
 path_image = 'public/images/restaurants/8.jpeg'
 r = Restaurant.create!(
  name: 'Casa Natural',
