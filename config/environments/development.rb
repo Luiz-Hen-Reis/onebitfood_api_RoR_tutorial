@@ -10,7 +10,6 @@ Rails.application.configure do
 
   Rails.application.routes.default_url_options[:host] = 'localhost:3000'
 
-
   # Do not eager load code on boot.
   config.eager_load = false
 
